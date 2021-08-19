@@ -15,10 +15,11 @@ let imageBaseURL = "https://image.tmdb.org/t/p/original/"
 
 
 class APIService: ServiceProtocol {
+    /// Fetch movies with Alamofire
     func fetchPopularMovies(completion: @escaping ([Movie]?) -> Void) {
         loadDataWithAlamofire(completion)
     }
-    
+    /// Load movies from URL with Alamofire
     private func loadDataWithAlamofire(_ completion: @escaping ([Movie]?) -> Void) {
         AF.request("\(apiBaseURL)\(apiKey)")
             .responseJSON { response in

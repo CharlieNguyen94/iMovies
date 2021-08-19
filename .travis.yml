@@ -1,0 +1,5 @@
+language: objective-c
+osx_image: xcode12.5
+xcode_project: iMovies.xcodeproj # path to your xcodeproj folder
+xcode_scheme: iMovies
+xcode_destination: platform=iOS Simulator,OS=14.3,name=iPhone 12 Pro
